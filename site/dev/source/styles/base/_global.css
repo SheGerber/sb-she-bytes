@@ -1,0 +1,16 @@
+/***  START Global   ***/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff; /*rgba($mainColor, .7);*/
+	font-family: $bodyFont, sans-serif;
+	color: #000;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+/***  END Global   ***/
