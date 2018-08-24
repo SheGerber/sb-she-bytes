@@ -1,21 +1,19 @@
 /***  START Main Nav  ***/
 .main-nav {
-	padding-top:  10px;
+	background: $mainColor; 
+	border-radius: 50px; 
+	color: #fff; 
+	display: block; 
+	float: left;
+	padding:21px 0;
+	width: 100%;  
+	@mixin clearFix;
 
-	@mixin forMed {
-		padding-top: 0;
-	}
 
-	&--float {
-		@mixin forMed {
-			float: $floatMainNav;
-		}
-	}
 
 	ul {
 		margin: 0;
 		padding: 0;
-		@mixin clearFix;
 	}
 
 	li {

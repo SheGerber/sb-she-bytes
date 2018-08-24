@@ -13,6 +13,10 @@ gulp.task('delLiveFolder', ['createIcons'], function() {
 	return del('./site/live');
 });
 
+gulp.task('delDevTmpFolder', function() {
+	return del('./site/dev/tmpsrc');
+});
+
 
 gulp.task('copyOtherFiles', ['delLiveFolder'], function() {
 	var dirsToCopy = [
@@ -35,7 +39,9 @@ gulp.task('copyOtherFiles', ['delLiveFolder'], function() {
 gulp.task('optimizeImgs', ['delLiveFolder'], function() {
 	return gulp.src(['./site/dev/source/images/**/*', 
 		'!./site/dev/source/images/svgs', 
-		'!./site/dev/source/images/svgs/**/*'])
+		'!./site/dev/source/images/svgs/**/*',
+		'!./site/dev/source/images/temp', 
+		'!./site/dev/source/images/temp/**/*'])
 		.pipe(imagemin({
 			progressive: true,
 			interlaced: true,
@@ -62,7 +68,9 @@ gulp.task('usemin', ['createCSS', 'createJS'], function(){
 gulp.task('copyImgsDev', ['createIcons'], function() {
 	return gulp.src(['./site/dev/source/images/**/*', 
 		'!./site/dev/source/images/svgs', 
-		'!./site/dev/source/images/svgs/**/*'])
+		'!./site/dev/source/images/svgs/**/*',
+		'!./site/dev/source/images/temp', 
+		'!./site/dev/source/images/temp/**/*'])
 		.pipe(gulp.dest("./site/dev/tmpsrc/images"));
 });
 
@@ -70,7 +78,7 @@ gulp.task('copyImgsDev', ['createIcons'], function() {
 
 gulp.task('buildLive', ['delLiveFolder', 'copyOtherFiles', 'optimizeImgs', 'useminTrig']);
 
-gulp.task('buildDev', ['createIcons', 'createCSS', 'createJS', 'copyImgsDev']);
+gulp.task('buildDev', ['delDevTmpFolder', 'createIcons', 'createCSS', 'createJS', 'copyImgsDev']);
 
 gulp.task('previewLive', function() {
 		browserSync.init({

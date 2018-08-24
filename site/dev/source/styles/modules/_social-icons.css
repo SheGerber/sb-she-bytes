@@ -1,27 +1,49 @@
 /***  START Social Icons  ***/
 .social-icons {
-	text-align: center;
+	text-align: right;
 
 	&__icon {
-		background-color: $minorColor;
-		border-radius: 10px;
+		border-radius: 20px;
 		display: inline-block;
-		height: 73px;
-		margin: 0 7px 7px 7px;
+		height: 40px;
+		margin: 0 5px 5px 5px;
 		position: relative;
-		width: 33%;
+		width: 40px;
 
-		@mixin forMed {
-			margin: 0 5px;
-			width: 73px;
+		&--facebook {
+			background-color: #4267b2;
 		}
+
+		&--twitter {
+			background-color: #1da1f2;
+		}
+
+		&--linkedin {
+			background-color: #006097;
+		}
+
+		&--instagram {
+			background-color: #993399;
+		}
+
+		&--mail {
+			background-color: #009933;
+		}
+
+
+
+
 
 		.icon {
 			display: block;
 			left: 50%;
 			position: absolute;
 			top: 50%;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%) scale(.4);
+		}
+
+		.icon--twitter {
+			stroke: #fff;
 		}
 	}
 }/***  END Social Icons  ***/

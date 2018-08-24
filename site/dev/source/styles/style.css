@@ -1,30 +1,42 @@
-@import "normalize.css";
+/*
+Theme Name: She-Bytes
+Theme URI: http://she-bytes.com
+Description: Custom WordPress theme developed with love (& lots of coffee!) for She-Bytes
+Author: She Gerber
+Author URI: http://shegerber.me
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: [tags go here];
+*/
+
+@import "base/_normalize.css";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 
 
-/***  START Main Styles ***/
 @import "main/_sprite";
 @import "main/_container";
 @import "main/_content";
 @import "main/_row";
 @import "main/_section";
-/***  END Main Styles ***/
+@import "main/_wrapper";
 
 
-/***  START Site Modules Styles ***/
 @import "modules/_main-header";
 @import "modules/_main-nav";
 @import "modules/_main-hero";
 @import "modules/_main-footer";
 @import "modules/_btn";
+@import "modules/_zig-zag";
 @import "modules/_modal-contact";
 @import "modules/_social-icons";
 
 
 
-/***  END Site Modules Styles ***/
+
+@import "modules/_social-iconsLrg";
 
 
 

@@ -29,7 +29,7 @@ gulp.task('watch', function(){
 
 
 gulp.task('cssInject', ['createCSS'], function() {
-	return gulp.src('./site/dev/tempsrc/styles/style.css')
+	return gulp.src('./site/dev/tmpsrc/styles/style.css')
 		.pipe(browserSync.stream());
 });
 

@@ -1,0 +1,52 @@
+.zigzag {
+  fill: none;
+  opacity: 0;
+  stroke: $mainColor;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 102;
+  stroke-dashoffset: 102;
+
+  &--minor {
+    stroke: $minorColor;
+  }
+
+  &--move {
+    opacity: 1;
+    animation: moveZigZag 2s ease-out forwards;
+  }
+
+  &--lrg {
+    stroke-dasharray: 215;
+    stroke-dashoffset: 215;
+    animation-duration: 3s;
+  }
+
+
+}
+
+
+@keyframes moveZigZag {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.no-svg .svg-png {
+
+    .&--zig {
+      background-position: 0 12.781954887218046%;
+      height: 17px;
+      width: 79px;
+    }
+
+    &--zigLrg {
+      background-position: 0 0;
+      height: 17px;
+      width: 159px;
+    }
+}
+
+
+

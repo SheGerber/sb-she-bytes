@@ -1,0 +1,11 @@
+/*
+
+add this to .js file and check console for length of dash for CSS animations
+
+*/
+
+
+
+var path = document.querySelector('.SVGname');
+var length = path.getTotalLength();
+console.log(length);

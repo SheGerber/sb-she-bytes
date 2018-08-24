@@ -11,6 +11,10 @@
 	.no-svg .icon {
 		background-image: url('../../tmpsrc/images/sprites/{{#replaceSVGwPNG}}{{{sprite}}}{{/replaceSVGwPNG}}');
 	}
+
+	.no-svg .svg-png {
+		background-image: url('../../tmpsrc/images/sprites/{{#replaceSVGwPNG}}{{{sprite}}}{{/replaceSVGwPNG}}');
+	}
 {{/first}}
 
 	.icon--{{base}} {

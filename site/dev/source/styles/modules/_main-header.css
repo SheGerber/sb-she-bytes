@@ -1,51 +1,43 @@
 /***  START Main Header  ***/
 .main-header {
-	padding: 10px 0;
-	position: absolute;  
-	transition: background-color .3s ease-out;
-	width: 100%;
-	z-index: 10;
+	border: 3px solid;
+	background: #fff;
+	margin: 0 auto;
+	padding: 10px 0 40px;
+	position: relative;  
+	z-index: 9;
 
 
 	&--showMenu {
 		background-color: rgba($minorColor, .55);
 	}
 
-
-	@mixin forMed {
-		background-color: rgba($mainColor, .35);
-		margin-bottom: 25px;
-		position: relative;  /* fixed */
-
-		&--sticky {
-			background-color: rgba($mainColor, .75);
-		}
-	}
-
 	&__logo {
-		background-color: $mainColor;
-		left: 15%;
-		padding: 21px 17px;
+		display: inline-block;
+		left: 20%;
 		position: absolute;
 		top: 0;
-		transform: translateX(-50%) scale(.8);
+		transform: translateX(-50%) scale(.6);
 		transform-origin: 50% 0;
 		transition: transform .3s ease-out;
+		width: 49%;
+
+	&__rtside {
+		display: inline-block;
+		text-align: right;
+		width: 49%;
+	}
+
+
 
 		@mixin forMed {
 			left: auto;
-			transform: translateX(0);
+			margin-top: -20px;
+			transform: translateX(0) scale(.8);
 
 			.main-header--sticky & {
 				transform: scale(.555);
 			}
-		}
-
-		&__graphic {
-			border: 1px solid #a6a6a6;
-			border-radius: 50%;
-			height: 60px;
-			width: 135px;
 		}
 	}
 
@@ -111,20 +103,12 @@
 	}
 
 	&__menu-content {
-		opacity: 0;
-		padding-top: 70px;
-		position: relative;
-		text-align: center;
-		transform: scale(1.2);
-		transition: all .3s ease-out;
-		z-index: -10;
+	margin:80px auto 0; 
+	position: absolute; 
+	max-width:1400px; 
+	width: 100%; 
+	z-index: 9;
 
-		@mixin forMed {
-			opacity: 1;
-			padding-top: 0;
-			transform: scale(1);
-			z-index: 1;
-		}
 
 		&--showMenu {
 			opacity: 1;
