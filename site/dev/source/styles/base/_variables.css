@@ -1,14 +1,15 @@
 $mainColor: #ed008c;
 $minorColor: #24a7b9;
+$minorTwoColor: green;
 
 $lightColor: #fff;
-$darkColor: #000;
+$darkColor: #010101;
 
 $lightDarkColor: $lightColor;  
 
 
 
-$bodyFont: 'Roboto';
+$bodyFont: 'Josefin Sans';
 $h1Font: '';
 $h2font: '';
 

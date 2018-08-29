@@ -1,22 +1,24 @@
 .content {
+
 	p {
-		font-weight: 300;
-		line-height: 1.25;
-		margin: 0 0 1rem 0;
-
-		@mixin forSml {
-			font-size: 1.125rem;
-		}
-
-		@mixin forMed {
-			line-height: 1.65;
-			margin: 0 0 1.8rem 0;
-		}
+		color: #010101; 
+		font-family: "Josefin Sans";
+		font-size: 1.65rem;
+		font-weight: 200;
+		line-height: 1.65; 
+		margin: 20px auto 1rem;
+		max-width: 850px; 
+		width: 100%;
 	}
 
 
 	p a {
 		font-weight: 700;
+	}
+
+	p span {
+		color: $minorTwoColor;
+		font-weight: 500;
 	}
 }
 

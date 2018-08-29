@@ -1,0 +1,28 @@
+.box {
+	box-sizing: border-box;
+
+	&__title {
+		background: $mainColor;
+		border-bottom: $darkColor 5px solid;
+		color: $lightDarkColor;
+		font-family: "Josefin Sans";
+		font-size: 1.35rem;
+		font-weight: 700;
+		padding: 25px 0;
+		text-align: center;
+	}
+
+	&__inside {
+		border: 1px solid #090909;
+		font-size: 1.25rem;
+		padding: 0 20px 20px;
+		text-align: center;
+
+
+
+
+
+
+
+	}
+}

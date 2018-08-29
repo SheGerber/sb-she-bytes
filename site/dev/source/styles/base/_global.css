@@ -4,13 +4,17 @@
 }
 
 body {
-	background-color: #fff; /*rgba($mainColor, .7);*/
+	background-color: $lightColor;
 	font-family: $bodyFont, sans-serif;
-	color: #000;
+	color: $darkColor;
 }
 
 img {
 	height: auto;
 	max-width: 100%;
+}
+
+.center {
+	text-align: center;
 }
 /***  END Global   ***/

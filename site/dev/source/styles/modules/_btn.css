@@ -8,6 +8,10 @@
 	padding: .75rem 1.2rem;
 	text-decoration: none;
 
+	@mixin forLrg {
+		font-size: 1.25rem;
+	}
+
 	&--minor {
 		background-color: $minorColor;
 	}

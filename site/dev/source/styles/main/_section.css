@@ -1,3 +1,19 @@
 .section {
+	margin: 50px auto;
+	max-width: 1200px;      /* SHE -> 1400  */
 
+	&__title {
+		color: $darkColor;
+		font-family: "Josefin Sans";
+		padding: 20px 0 5px;
+		text-align: center;
+
+		span {
+			color: $mainColor;
+		}
+	}
+
+	&--center {
+		text-align: center;
+	}
 }

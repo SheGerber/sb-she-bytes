@@ -4,55 +4,52 @@
 	border-radius: 50px; 
 	color: #fff; 
 	display: block; 
-	float: left;
-	padding:21px 0;
+	font-family: "Josefin Sans";
+	padding: 21px 0;
 	width: 100%;  
-	@mixin clearFix;
-
 
 
 	ul {
 		margin: 0;
 		padding: 0;
+		text-align: center;
 	}
 
 	li {
+		border-right: 1px solid #FF5BBD;
 		display: inline-block;
 		list-style: none;
-		padding-right: 7px;
 
 		@mixin forMed {
-			display: block;
-			float: $floatNavLinks;
-			padding-right: 20px;
+			padding: 10px 8px;
+		}
+
+		@mixin forLrg {
+			padding: 10px 10px;
 		}
 	}
 
 	li:last-child {
-		padding-right: 0;
-
-		@mixin forMed {
-			padding-right: 20px;
-		}
+		border-right: 0;
 	}
 
 	a {
-		background-color: rgba($mainColor, .5);
 		color: $lightDarkColor;
 		display: block;
-		font-size: .8rem;
-		font-weight: 300;
-		padding: 5px 8px;
+		font-size: .75rem;
 		text-decoration: none;
+		text-transform: uppercase;
 
 		@mixin forMed {
-			background-color: transparent;
-			font-size: 1rem;
-			padding: 12px 0;
+			font-size: .8rem;
 
 			&.current-list-item {
-				color: $minorColor;
+				color: #000;
 			}
+		}
+
+		@mixin forLrg {
+			font-size: 1rem;
 		}
 	}
 }

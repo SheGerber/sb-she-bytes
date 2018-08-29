@@ -1,10 +1,10 @@
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1400px;      /* SHE -> 1236  */
+	max-width: 1200px;      /* SHE -> 1400  */
 	overflow: hidden;
-	padding-left: 17px;
-	padding-right: 17px;
+	padding-left: 27px;
+	padding-right: 27px;
 
 	.container {
 		padding-left: 0;

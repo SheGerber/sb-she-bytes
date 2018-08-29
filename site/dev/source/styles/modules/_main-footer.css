@@ -1,6 +1,7 @@
 /***  START Main Footer  ***/
 .main-footer {
-	background-color: $mainColor;
+	background-color: $darkColor;
+	border-top: 10px solid $mainColor;
 	color: $lightDarkColor;
 	padding: .5rem 0;
 	text-align: center;

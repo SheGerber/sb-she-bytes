@@ -2,5 +2,16 @@
 
 	@mixin clearFix;
 
+	&--cols {
+		margin-right: -30px;
+	}
 
+	&--cols > div {
+		padding-right: 30px;
+	}
+
+	&__1third {
+		float: left;
+		width: 33%;
+	}
 }
