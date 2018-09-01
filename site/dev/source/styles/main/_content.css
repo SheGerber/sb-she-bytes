@@ -1,8 +1,8 @@
 .content {
 
 	p {
-		color: #010101; 
-		font-family: "Josefin Sans";
+		color: $darkColor; 
+		font-family: $bodyFont;
 		font-size: 1.65rem;
 		font-weight: 200;
 		line-height: 1.65; 

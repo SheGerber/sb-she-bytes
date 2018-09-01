@@ -1,0 +1,41 @@
+.contact-info {
+	font-family: $lowCaseFont;
+	font-size: .8rem;
+
+		@mixin forMed {
+			font-size: 1rem;
+		}
+
+		@mixin forLrg {
+			font-size: 1.25rem;
+		}
+
+	&__icon {
+		display: inline-block;
+		margin: 5px 0 0 30px;
+		transform: scale(.5);
+
+		@mixin forMed {
+			transform: scale(.6);
+		}
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	a {
+		display: block;
+		font-size: .8rem;
+		margin-top: 15px;
+		text-transform: none;
+
+		@mixin forMed {
+			font-size: 1rem;
+		}
+
+		@mixin forLrg {
+			font-size: 1.25rem;
+		}
+	}
+}

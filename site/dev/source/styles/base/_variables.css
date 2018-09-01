@@ -10,8 +10,12 @@ $lightDarkColor: $lightColor;
 
 
 $bodyFont: 'Josefin Sans';
-$h1Font: '';
-$h2font: '';
+$hdrFont: 'Josefin Sans';
+$h1Font: 'Josefin Sans';
+$h2Font: 'Ubuntu';
+
+$lowCaseFont: 'Ubuntu';
+$upCaseFont: 'Josefin Sans';
 
 
 

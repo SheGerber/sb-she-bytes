@@ -1,15 +1,43 @@
 .section {
 	margin: 50px auto;
-	max-width: 1200px;      /* SHE -> 1400  */
+
+
+	&--max {
+		max-width: 1200px;      /* SHE -> 1400  */
+		padding: 0 25px;
+	}
+
+	&--keyboard {
+		background: url(../images/keyboard.png);
+		background-position: center;
+		background-size: cover;
+		color: #fff;
+		font-size: 4rem;
+		font-weight: 500;
+		padding: 50px 0;
+		text-align: center;
+
+		@mixin forMed {
+			font-size: 5rem;
+			padding: 70px 0;
+		}
+	}
 
 	&__title {
 		color: $darkColor;
-		font-family: "Josefin Sans";
-		padding: 20px 0 5px;
+		font-family: $h1Font;
+		font-size: 2rem;
+		font-weight: 400;
+		margin: 0 auto;
+		padding: 20px 0 0;
 		text-align: center;
 
 		span {
 			color: $mainColor;
+		}
+
+		@mixin forMed {
+			font-size: 3rem;
 		}
 	}
 

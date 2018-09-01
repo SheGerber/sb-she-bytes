@@ -4,18 +4,93 @@
 	border-top: 10px solid $mainColor;
 	color: $lightDarkColor;
 	padding: .5rem 0;
-	text-align: center;
 
-	&__text {
-		display: block;
-		font-weight: 200;
-		margin-bottom: 1rem;
+	&__love {
+		display: inline-block;
+		margin: 0 -10px -15px;
+		position: relative;
+		transform: scale(.5);
 
 		@mixin forMed {
-			display: inline;
-			margin-bottom: 0;
-			margin-right: 1.4rem;
+			transform: scale(.6);
 		}
 	}
+
+	&__social {
+		font-family: $upCaseFont;
+		font-size: 1rem;
+		padding: 30px 0;
+		text-align: center;
+
+			@mixin forMed {
+				font-size: 1.35rem;
+			}
+
+			@mixin forLrg {
+				font-size: 1.55rem;
+			}
+
+	}
+
+	ul {
+		float: left;
+
+		@mixin forMed {
+			float: none;
+		}
+	}
+
+	li {
+		border-right: 1px solid $mainColor;
+		float: left;
+		list-style: none;
+		padding: 5px;
+
+		@mixin forMed {
+			border-right: 0;
+			float: none;
+			padding: 7px 0;
+		}
+	}
+
+	a {
+		color: $lightDarkColor;
+		font-size: .75rem;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&.current-list-item,
+		&:hover {
+			color: $mainColor;
+		}
+
+		@mixin forMed {
+			font-size: 1rem;
+		}
+
+		@mixin forLrg {
+			font-size: 1.35rem;
+		}
+	}
+
+
+	&__copy {
+		border-top: 3px solid $mainColor;
+		font-family: $lowCaseFont;
+		font-size: .75rem;
+		margin-top: 20px;
+		padding: 40px 0 20px;
+		text-align: center;
+
+			@mixin forMed {
+				font-size: .8rem;
+			}
+
+			@mixin forLrg {
+				font-size: 1rem;
+			}
+	}
+
+
 }
 /***  END Main Footer  ***/

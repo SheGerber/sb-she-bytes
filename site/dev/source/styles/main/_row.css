@@ -10,8 +10,15 @@
 		padding-right: 30px;
 	}
 
-	&__1third {
-		float: left;
-		width: 33%;
+	@mixin forMed {
+		&__1third {
+			float: left;
+			width: 33%;
+		}
+
+		&__2third {
+			float: left;
+			width: 66%;
+		}
 	}
 }

@@ -17,4 +17,16 @@ img {
 .center {
 	text-align: center;
 }
+
+.floatleft {
+	float: left;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
 /***  END Global   ***/

@@ -4,7 +4,7 @@
 	border-radius: 50px; 
 	color: #fff; 
 	display: block; 
-	font-family: "Josefin Sans";
+	font-family: $hdrFont;
 	padding: 21px 0;
 	width: 100%;  
 
@@ -43,14 +43,17 @@
 		@mixin forMed {
 			font-size: .8rem;
 
-			&.current-list-item {
-				color: #000;
-			}
 		}
 
 		@mixin forLrg {
 			font-size: 1rem;
 		}
+
+		&.current-list-item,
+		&:hover {
+			color: $darkColor;
+		}
+		
 	}
 }
 /***  END Main Nav  ***/

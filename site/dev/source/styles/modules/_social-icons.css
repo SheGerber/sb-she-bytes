@@ -29,7 +29,7 @@
 			background-color: #993399;
 		}
 
-		&--mail {
+		&--mail-solid {
 			background-color: #009933;
 		}
 
@@ -49,4 +49,5 @@
 			stroke: #fff;
 		}
 	}
-}/***  END Social Icons  ***/
+}
+/***  END Social Icons  ***/
