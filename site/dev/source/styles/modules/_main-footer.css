@@ -3,15 +3,16 @@
 	background-color: $darkColor;
 	border-top: 10px solid $mainColor;
 	color: $lightDarkColor;
-	padding: .5rem 0;
+	padding: .3rem 0;
 
 	&__love {
 		display: inline-block;
-		margin: 0 -10px -15px;
+		margin: 20px -13px -15px;
 		position: relative;
-		transform: scale(.5);
+		transform: scale(.4);
 
 		@mixin forMed {
+			margin: 0 -10px -15px;
 			transform: scale(.6);
 		}
 	}
@@ -19,59 +20,27 @@
 	&__social {
 		font-family: $upCaseFont;
 		font-size: 1rem;
-		padding: 30px 0;
 		text-align: center;
 
 			@mixin forMed {
-				font-size: 1.35rem;
+				font-size: 1.25rem;
+				padding: 70px 0;
 			}
 
 			@mixin forLrg {
 				font-size: 1.55rem;
 			}
+	}
+
+	&__contact {
+		margin-top: 50px;
+		padding-left: 40px;
 
 	}
 
-	ul {
-		float: left;
 
-		@mixin forMed {
-			float: none;
-		}
-	}
 
-	li {
-		border-right: 1px solid $mainColor;
-		float: left;
-		list-style: none;
-		padding: 5px;
 
-		@mixin forMed {
-			border-right: 0;
-			float: none;
-			padding: 7px 0;
-		}
-	}
-
-	a {
-		color: $lightDarkColor;
-		font-size: .75rem;
-		text-decoration: none;
-		text-transform: uppercase;
-
-		&.current-list-item,
-		&:hover {
-			color: $mainColor;
-		}
-
-		@mixin forMed {
-			font-size: 1rem;
-		}
-
-		@mixin forLrg {
-			font-size: 1.35rem;
-		}
-	}
 
 
 	&__copy {

@@ -40,8 +40,8 @@ gulp.task('optimizeImgs', ['delLiveFolder'], function() {
 	return gulp.src(['./site/dev/source/images/**/*', 
 		'!./site/dev/source/images/svgs', 
 		'!./site/dev/source/images/svgs/**/*',
-		'!./site/dev/source/images/temp', 
-		'!./site/dev/source/images/temp/**/*'])
+		'!./site/dev/source/images/00temp', 
+		'!./site/dev/source/images/00temp/**/*'])
 		.pipe(imagemin({
 			progressive: true,
 			interlaced: true,

@@ -29,11 +29,12 @@ Tags: [tags go here];
 @import "modules/_main-hero";
 @import "modules/_main-footer";
 @import "modules/_btn";
+@import "modules/_footer-nav";
 @import "modules/_social-icons";
 @import "modules/_box";
+@import "modules/_contact-info";
 @import "modules/_modal-contact";
 @import "modules/_zig-zag";
-@import "modules/_contact-info";
 
 
 

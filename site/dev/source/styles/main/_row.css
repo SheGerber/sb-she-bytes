@@ -10,13 +10,25 @@
 		padding-right: 30px;
 	}
 
+	@mixin forSml {
+		&__sm--half {
+			float: left;
+			width: 50%;
+		}
+	}
+
 	@mixin forMed {
-		&__1third {
+
+		&__md--wide {
+			width: 100%;
+		}
+
+		&__md--1third {
 			float: left;
 			width: 33%;
 		}
 
-		&__2third {
+		&__md--2third {
 			float: left;
 			width: 66%;
 		}

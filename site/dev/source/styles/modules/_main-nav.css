@@ -21,7 +21,7 @@
 		list-style: none;
 
 		@mixin forMed {
-			padding: 10px 8px;
+			padding: 5px 3px 5px 1px;
 		}
 
 		@mixin forLrg {

@@ -412,13 +412,25 @@ img {
 		padding-right: 30px;
 	}
 
+@media (min-width: 530px) {
+		.row__sm--half {
+			float: left;
+			width: 50%;
+		}
+	}
+
 @media (min-width: 800px) {
-		.row__1third {
+
+		.row__md--wide {
+			width: 100%;
+		}
+
+		.row__md--1third {
 			float: left;
 			width: 33%;
 		}
 
-		.row__2third {
+		.row__md--2third {
 			float: left;
 			width: 66%;
 		}
@@ -611,7 +623,7 @@ img {
 @media (min-width: 800px) {
 
 .main-nav li {
-			padding: 10px 8px
+			padding: 5px 3px 5px 1px
 	}
 	}
 
@@ -698,22 +710,23 @@ img {
 	background-color: #010101;
 	border-top: 10px solid #ed008c;
 	color: #fff;
-	padding: .5rem 0;
+	padding: .3rem 0;
 
 
 }
 
 .main-footer__love {
 		display: inline-block;
-		margin: 0 -10px -15px;
+		margin: 20px -13px -15px;
 		position: relative;
-		-webkit-transform: scale(.5);
-		        transform: scale(.5);
+		-webkit-transform: scale(.4);
+		        transform: scale(.4);
 	}
 
 @media (min-width: 800px) {
 
 .main-footer__love {
+			margin: 0 -10px -15px;
 			-webkit-transform: scale(.6);
 			        transform: scale(.6)
 	}
@@ -722,16 +735,14 @@ img {
 .main-footer__social {
 		font-family: 'Josefin Sans';
 		font-size: 1rem;
-		padding: 30px 0;
 		text-align: center;
-
 	}
 
 @media (min-width: 800px) {
 
 .main-footer__social {
-				font-size: 1.35rem
-
+				font-size: 1.25rem;
+				padding: 70px 0
 	}
 	}
 
@@ -739,61 +750,13 @@ img {
 
 .main-footer__social {
 				font-size: 1.55rem
-
 	}
 	}
 
-.main-footer ul {
-		float: left;
-	}
+.main-footer__contact {
+		margin-top: 50px;
+		padding-left: 40px;
 
-@media (min-width: 800px) {
-
-.main-footer ul {
-			float: none
-	}
-	}
-
-.main-footer li {
-		border-right: 1px solid #ed008c;
-		float: left;
-		list-style: none;
-		padding: 5px;
-	}
-
-@media (min-width: 800px) {
-
-.main-footer li {
-			border-right: 0;
-			float: none;
-			padding: 7px 0
-	}
-	}
-
-.main-footer a {
-		color: #fff;
-		font-size: .75rem;
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
-.main-footer a.current-list-item,
-		.main-footer a:hover {
-			color: #ed008c;
-		}
-
-@media (min-width: 800px) {
-
-.main-footer a {
-			font-size: 1rem
-	}
-	}
-
-@media (min-width: 1200px) {
-
-.main-footer a {
-			font-size: 1.35rem
-	}
 	}
 
 .main-footer__copy {
@@ -854,6 +817,86 @@ img {
 	}
 
 /***  END Button  ***/
+
+.footer-nav ul {
+		text-align: center;
+	}
+
+@media (min-width: 800px) {
+
+.footer-nav ul {
+			text-align: left
+	}
+	}
+
+.footer-nav li {
+		display: inline-block;
+		border-right: 1px solid #ed008c;
+		list-style: none;
+		padding: 0 15px;
+	}
+
+@media (min-width: 800px) {
+
+.footer-nav li {
+			border-right: 0;
+			display: block;
+			padding: 10px 20px
+	}
+
+			.footer-nav li::before{
+				background-image: url('../../tmpsrc/images/sprites/sprite-5b4f7a99.svg');
+				background-position: 65.92635885447108% 31.097560975609756%;
+				content: '';
+				height: 34px;
+				position: absolute;
+				-webkit-transform: scale(.4);
+				        transform: scale(.4);
+				width: 41.9px;
+			}
+	}
+
+@media (min-width: 1200px) {
+
+			.footer-nav li::before {
+				-webkit-transform: scale(.5);
+				        transform: scale(.5);
+			}
+	}
+
+.footer-nav li:last-child {
+		border-right: 0;
+	}
+
+.footer-nav a {
+		color: #fff;
+		font-size: .75rem;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+.footer-nav a.current-list-item,
+		.footer-nav a:hover {
+			color: #ed008c;
+		}
+
+@media (min-width: 800px) {
+
+.footer-nav a {
+			display: block;
+			font-size: 1rem;
+			padding-top: 10px;
+			padding-left: 40px
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.footer-nav a {
+			font-size: 1.35rem;
+			padding-left: 60px
+	}
+	}
 
 /***  START Social Icons  ***/
 
@@ -944,6 +987,71 @@ img {
 		}
 
 /***  END Box  ***/
+
+.contact-info {
+	font-family: 'Ubuntu';
+	padding-bottom: .3rem;
+	padding-left: 60px;
+	position: relative;
+}
+
+@media (min-width: 800px) {
+
+.contact-info {
+			font-size: 1rem
+}
+	}
+
+@media (min-width: 1200px) {
+
+.contact-info {
+			font-size: 1.25rem
+}
+	}
+
+.contact-info__icon {
+		display: block;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		-webkit-transform: scale(.5);
+		        transform: scale(.5);
+	}
+
+@media (min-width: 800px) {
+
+.contact-info__icon {
+			-webkit-transform: scale(.6);
+			        transform: scale(.6)
+	}
+	}
+
+.contact-info p {
+		margin: 20px 0;
+	}
+
+.contact-info a {
+		color: #fff;
+		display: block;
+		font-size: 1rem;
+		padding-top: 10px;
+		text-decoration: none;
+		text-transform: none;
+	}
+
+@media (min-width: 800px) {
+
+.contact-info a {
+			font-size: 1rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.contact-info a {
+			font-size: 1.25rem
+	}
+	}
 
 /***  START Contact Modal  ***/
 
@@ -1059,65 +1167,6 @@ img {
     }
 
 /***  END Zig Zag  ***/
-
-.contact-info {
-	font-family: 'Ubuntu';
-	font-size: .8rem;
-}
-
-@media (min-width: 800px) {
-
-.contact-info {
-			font-size: 1rem
-}
-	}
-
-@media (min-width: 1200px) {
-
-.contact-info {
-			font-size: 1.25rem
-}
-	}
-
-.contact-info__icon {
-		display: inline-block;
-		margin: 5px 0 0 30px;
-		-webkit-transform: scale(.5);
-		        transform: scale(.5);
-	}
-
-@media (min-width: 800px) {
-
-.contact-info__icon {
-			-webkit-transform: scale(.6);
-			        transform: scale(.6)
-	}
-	}
-
-.contact-info p {
-		margin: 10px 0;
-	}
-
-.contact-info a {
-		display: block;
-		font-size: .8rem;
-		margin-top: 15px;
-		text-transform: none;
-	}
-
-@media (min-width: 800px) {
-
-.contact-info a {
-			font-size: 1rem
-	}
-	}
-
-@media (min-width: 1200px) {
-
-.contact-info a {
-			font-size: 1.25rem
-	}
-	}
 
 
 
