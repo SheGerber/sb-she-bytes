@@ -44,4 +44,37 @@
 	&--center {
 		text-align: center;
 	}
+
+	&__contact {
+		font-family: $lowCaseFont;
+		font-weight: 600;
+		height: 195px;
+		padding-top: 50px;
+
+		@mixin forMed {
+			border-left: 1px solid #ccc;
+			padding-top: 30px;
+		}
+
+		&--call {
+			margin-top: 0;
+			font-size: 2rem;
+		}
+
+		&--mail {
+			font-size: 1.5rem;
+			margin-top: 0;
+			padding-top: 0;
+
+			@mixin forMed {
+				padding-top: 10px;
+			}
+
+		}
+		
+		a {
+			color: $darkColor;
+			text-decoration: none;
+		}
+	}
 }

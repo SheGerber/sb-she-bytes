@@ -30,10 +30,15 @@
 		}
 
 		&--mail-solid {
-			background-color: #009933;
+			background-color: $minorTwoColor;
 		}
 
-
+		&--call {
+			background-color: $mainColor;
+			height: 60px;
+			width: 60px;
+			border-radius: 30px;
+		}
 
 
 
@@ -45,8 +50,12 @@
 			transform: translate(-50%, -50%) scale(.4);
 		}
 
-		.icon--twitter {
-			stroke: #fff;
+		.icon--call {
+			transform: translate(-50%, -50%) scale(.7);
+		}
+
+		.icon--mail {
+			transform: translate(-50%, -50%) scale(.7);
 		}
 	}
 }

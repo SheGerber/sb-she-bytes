@@ -15,6 +15,22 @@
 	.no-svg .svg-png {
 		background-image: url('../../tmpsrc/images/sprites/{{#replaceSVGwPNG}}{{{sprite}}}{{/replaceSVGwPNG}}');
 	}
+
+	.footer-nav {
+		li {
+			@mixin forMed {
+				&::before{
+					background-image: url('../../tmpsrc/images/sprites/{{{sprite}}}');
+					background-position: 95.54254840162089% 91.89873417721518%;
+				}
+			}
+		}
+	}
+
+
+
+
+
 {{/first}}
 
 	.icon--{{base}} {

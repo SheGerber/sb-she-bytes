@@ -17,23 +17,6 @@
 			border-right: 0;
 			display: block;
 			padding: 10px 20px;
-
-			&::before{
-				background-image: url('../../tmpsrc/images/sprites/sprite-5b4f7a99.svg');
-				background-position: 65.92635885447108% 31.097560975609756%;
-				content: '';
-				height: 34px;
-				position: absolute;
-				transform: scale(.4);
-				width: 41.9px;
-			}
-		}
-
-		@mixin forLrg {
-
-			&::before {
-				transform: scale(.5);
-			}
 		}
 	}
 
