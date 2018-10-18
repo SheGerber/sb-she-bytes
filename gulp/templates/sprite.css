@@ -22,6 +22,11 @@
 				&::before{
 					background-image: url('../../tmpsrc/images/sprites/{{{sprite}}}');
 					background-position: 95.54254840162089% 91.89873417721518%;
+					content: '';
+					height: 34px;
+					position: absolute;
+					transform: scale(.4);				
+					width: 41.9px;
 				}
 			}
 		}

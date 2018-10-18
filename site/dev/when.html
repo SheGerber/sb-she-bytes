@@ -8,27 +8,27 @@
 
   <!-- favicon files -->
     <!-- generics -->
-    <link rel="icon" href="src/images/favicons/favicons/favicon-32.png" sizes="32x32">
-    <link rel="icon" href="src/images/favicons/favicon-57.png" sizes="57x57">
-    <link rel="icon" href="src/images/favicons/favicon-76.png" sizes="76x76">
-    <link rel="icon" href="src/images/favicons/favicon-96.png" sizes="96x96">
-    <link rel="icon" href="src/images/favicons/favicon-128.png" sizes="128x128">
-    <link rel="icon" href="src/images/favicons/favicon-228.png" sizes="228x228">
+    <link rel="icon" href="tmpsrc/images/favicons/favicons/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="tmpsrc/images/favicons/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="tmpsrc/images/favicons/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="tmpsrc/images/favicons/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="tmpsrc/images/favicons/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="tmpsrc/images/favicons/favicon-228.png" sizes="228x228">
 
     <!-- Android -->
-    <link rel="shortcut icon" sizes="196x196" href="/src/images/favicons/favicon-196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/tmpsrc/images/favicons/favicon-196.png">
 
     <!-- iOS -->
-    <link rel="apple-touch-icon" href="src/images/favicons/favicon-120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="src/images/favicons/favicon-152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="src/images/favicons/favicon-180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="tmpsrc/images/favicons/favicon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="tmpsrc/images/favicons/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="tmpsrc/images/favicons/favicon-180.png" sizes="180x180">
 
     <!-- Windows 8 IE 10-->
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/src/images/favicons/favicon-144.png">
+    <meta name="msapplication-TileImage" content="/tmpsrc/images/favicons/favicon-144.png">
 
     <!-- Windows 8.1 + IE11 and above -->
-    <meta name="msapplication-config" content="/src/images/favicons/browserconfig.xml" />
+    <meta name="msapplication-config" content="/tmpsrc/images/favicons/browserconfig.xml" />
   <!-- /favicon files -->
 
 	<!-- Google Fonts -->
@@ -38,8 +38,12 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Acme|Anton|Chewy|Jockey+One|Shadows+Into+Light">
 -->
 
-  <link rel="stylesheet" href="src/css/style-a8d79786f5.css"/>
-  <script src="src/js/ThirdParty-836149fc10.js"></script>
+  <!-- build:css src/css/style.css  -->
+  <link rel="stylesheet" type="text/css" href="tmpsrc/styles/style.css">
+  <!-- endbuild -->
+  <!-- build:js src/js/ThirdParty.js -->
+  <script type="text/javascript" src="tmpsrc/scripts/ThirdParty.js"></script>
+  <!-- endbuild -->
 </head>
 <body>
  <div id="page" class="site">
@@ -54,7 +58,7 @@
         <div class="row">
           <div class="main-header__logo">
             <a href="http://www.she-bytes.com/" class="main-header__logo-link">
-              <img src="src/images/logos/she-bytes.png" width="420" height="100" alt="She-Bytes">
+              <img src="tmpsrc/images/logos/she-bytes.png" width="420" height="100" alt="She-Bytes">
             </a>
           </div><!-- /main-header__logo -->
           <div class="main-header__rtside">
@@ -82,13 +86,13 @@
           <div class="main-header__menu-content">
             <nav class="main-nav">
                <ul>
-                  <li><a href="#" class="current-list-item">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="what.html">What She Does</a></li>
                   <li><a href="how.html">How She Will</a></li>
                   <li><a href="why.html">Why She-Bytes</a></li>
                   <li><a href="where.html">Where She Is</a></li>
                   <li><a href="who.html">Who She Knows</a></li>
-                  <li><a href="when.html">When She Surfs</a></li>
+                  <li><a href="#" class="current-list-item">When She Blogs</a></li>
                   <li><a href="wanna.html">Wanna Byte?</a></li>
                 </ul>
             </nav>
@@ -98,101 +102,20 @@
     </header>
   </div><!-- /(header)wrapper -->
 
-  <div class="main-hero">
-    <picture><!-- 
-      <source srcset="src/images/pix-1920w.jpg 1920w">
-      <source srcset="src/images/pix-1380w.jpg 1380w">
-      <source srcset="src/images/pix-990w.jpg 990w">-->
-      <img class="main-hero__img" src="src/images/She-BytesTechCords-1920.jpg" alt="She-Bytes Web Development">
-    </picture>
-    <div class="main-hero__caption">
-      <h1 class="main-hero__title">WELCOME TO SHE-BYTES!</h1>
-    </div>
-  </div><!-- /main-hero -->
-  
-  <div class="section section--center">
-    <h1 class="section__title"><span>ALL YOUR</span> COMPUTER & WEB NEEDS</h1>
+   <div class="section section--center">
+    <h1 class="section__title"><span>WHEN</span> SHE BLOGS</h1>
     <svg class="svg-png svg-png--zigLrg" xmlns="http://www.w3.org/2000/svg" width="157" height="15" viewBox="0 0 157 15">
       <polyline class="zigzag zigzag--minor zigzag--lrg" points="1 13 13 3 23 13 33 3 43 13 53 3 63 13 73 3 83 13 93 3 103 13 113 3 123 13 133 3 143 13 155 3"/>
     </svg>
     <div class="content">
       <p>
-        Whether your needs are Professional, Personal, or just <span>For Fun</span>, She-Bytes provides full-service web development and computer software solutions. Using our unique perspective, our team of expert designers and developers create fun, bold, modern solutions for all of our clients needs.  
+        <span>She-Bytes</span> tries to stay current, and has found some interesting information on the internet. <br>
+        Here feel free to be enlightened with a sample of the sometimes odd, quirky, funny or just plain informative data that can be found on the information superhighway!!
       </p>
     </div>
   </div><!-- /section -->
 
-  <div class="container">
-    <div class="row row--cols">
-      <div class="row__md--1third">
-        <div class="box">
-          <div class="box__title">
-            CUSTOM PROGRAMMING
-          </div>
-          <div class="box__inside">
-            <h2>PHP / JavaScript</h2>
-            <h2>ASP.net / C# / VB / Classic ASP</h2>
-            <h2>WordPress / Joomla / Drupal</h2>
-            <strong>She-Bytes</strong> has the expertise to design custom-built software, specifically designed for your individual business needs!<br>
-            (In almost ANY language!) 
-          </div>
-        </div><!-- /box -->
-      </div><!-- /row__md--1third -->
-      <div class="row__md--1third">
-        <div class="box">
-          <div class="box__title">
-            WEBSITE DEVELOPMENT
-          </div>
-          <div class="box__inside">
-            <h2>Responsive</h2>
-            <h2>No 'Cookie-Cutter' Themes</h2>
-            <h2>Browser Compatible</h2>
-            <strong>She-Bytes</strong> can help open your business to the world, display needed information and sell ecommerce for all environments -- Desktops, Tablets, and Mobile.
-          </div>
-        </div><!-- /box -->
-      </div><!-- /row__md--1third -->
-      <div class="row__md--1third">
-        <div class="box">
-          <div class="box__title">
-            AND MORE SOLUTIONS
-          </div>
-          <div class="box__inside">
-            <h2>Databases</h2>
-            <strong>She-Bytes</strong> can organize and store all important information!
-            <h2><br>SEO - Social Mgr</h2>
-             <strong>She-Bytes</strong> can optimize your website, local listings and social presence to perform well in the relevant search engines.
-          </div>
-        </div><!-- /box -->
-      </div><!-- /row__md--1third -->
-    </div><!-- /row -->
-  </div><!-- /section -->
-
-
-
-  <div class="section section--max section--center">
-       <h1 class="section__title"><span>SOLUTIONS</span> FOR YOUR BUSINESS</h1>
-       <svg class="svg-png svg-png--zigLrg" xmlns="http://www.w3.org/2000/svg" width="157" height="15" viewBox="0 0 157 15">
-        <polyline class="zigzag zigzag--minor zigzag--lrg" points="1 13 13 3 23 13 33 3 43 13 53 3 63 13 73 3 83 13 93 3 103 13 113 3 123 13 133 3 143 13 155 3"/>
-      </svg>
-      <div class="left">
-          <h2>Outdated website need redesign?</h2>
-        </div>
-        <div class="center">
-          <h2>Have a product idea to advertise?</h2> 
-        </div>
-        <div class="right">
-          <h2>Need to open business nationally?</h2> 
-        </div>
-    <div class="content">
-      <p>
-        If you have a business, you need to be online. You know what your customers want from your business, and we have the expertise. Together, we can produce the perfect computer solution to suite your needs, and remain within your budget.
-      </p>
-      <p>
-        You can focus on your life, and let us worry about your site!
-  	 </p>
-    </div><!-- /content -->
-   </div><!-- /section -->
-
+ 
 
   <div class="wrapper">
     <div class="section section--keyboard">
@@ -203,7 +126,7 @@
   <div class="section section--max section--center">
     <div class="row">
       <div class="row__md--1third">
-        <img src="src/images/logos/logo-sqr.png">
+        <img src="tmpsrc/images/logos/logo-sqr.png">
       </div><!-- /row__md--1third -->
       <div class="row__md--1third">
         <div class="section__contact">
@@ -238,7 +161,7 @@
                   <li><a href="why.html">Why She-Bytes</a></li>
                   <li><a href="where.html">Where She Is</a></li>
                   <li><a href="who.html">Who She Knows</a></li>
-                  <li><a href="when.html">When She Blogs</a></li>
+                  <li><a href="#" class="current-list-item">When She Blogs</a></li>
                   <li><a href="wanna.html">Wanna Byte?</a></li>
                 </ul>
             </nav>
@@ -325,7 +248,9 @@
     <div class="modal-contact__closeX">X</div>
   </div><!-- /modal-contact -->
 
-   <script src="src/js/Main-5f25d21b96.js"></script>
+   <!-- build:js src/js/Main.js -->
+    <script type="text/javascript" src="tmpsrc/scripts/Main.js"></script>
+   <!-- endbuild -->
   </div><!-- /page -->
 </body>
 </html>
