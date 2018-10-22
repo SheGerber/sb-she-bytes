@@ -409,12 +409,19 @@ img {
 .content p {
 		color: #010101; 
 		font-family: 'Josefin Sans';
-		font-size: 1.65rem;
+		font-size: 1.35rem;
 		font-weight: 200;
 		line-height: 1.65; 
 		margin: 20px auto 1rem;
 		max-width: 850px; 
 		width: 100%;
+	}
+
+@media (min-width: 600px) {
+
+.content p {
+			font-size: 1.65rem
+	}
 	}
 
 .content p a {
@@ -465,8 +472,15 @@ img {
 	}
 
 .section {
-	margin: 50px auto;
+	margin: 20px auto;
 }
+
+@media (min-width: 600px) {
+
+.section {
+		margin: 50px auto
+}
+	}
 
 .section--max {
 		max-width: 1200px;      /* SHE -> 1400  */
@@ -495,7 +509,7 @@ img {
 .section__title {
 		color: #010101;
 		font-family: 'Josefin Sans';
-		font-size: 2rem;
+		font-size: 1.7rem;
 		font-weight: 400;
 		margin: 0 auto;
 		padding: 20px 0 0;
@@ -505,6 +519,13 @@ img {
 .section__title span {
 			color: #ed008c;
 		}
+
+@media (min-width: 600px) {
+
+.section__title {
+			font-size: 2rem
+	}
+	}
 
 @media (min-width: 900px) {
 
@@ -567,7 +588,7 @@ img {
 .main-header {
 	background: #fff;
 	margin: 0 auto;
-	padding: 10px 0 10px;
+	padding-top: 10px;
 	position: relative;  
 	z-index: 9;
 }
@@ -594,23 +615,33 @@ img {
 	}
 
 .main-header__rtside {
+		display: none;
 		text-align: center;
 		width: 100%;
+	}
+
+@media (min-width: 420px) {
+
+.main-header__rtside {
+			display: inline-block
+	}
 	}
 
 @media (min-width: 600px) {
 
 .main-header__rtside {
-			display: inline-block;
 			padding-bottom: 10px;
 			vertical-align: middle;
 			width: 49%
 	}
 	}
 
+@media (min-width: 420px) {
+
 .main-header__social {
-		float: left;
-		width: 53%;
+			float: left;
+			width: 50%
+	}
 	}
 
 @media (min-width: 600px) {
@@ -753,6 +784,7 @@ img {
 		border-right: 1px solid #FF5BBD;
 		display: inline-block;
 		list-style: none;
+		padding: 3px 7px 3px 5px;
 	}
 
 @media (min-width: 900px) {
@@ -831,15 +863,23 @@ img {
 		color: #fff;
 		display: inline-block;
 		font-family: 'Josefin Sans';
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		margin: 0;
-		padding: 20px;
+		padding: 13px;
+	}
+
+@media (min-width: 420px) {
+
+.main-hero__title {
+			font-size: 1.5rem
+	}
 	}
 
 @media (min-width: 600px) {
 
 .main-hero__title {
-			font-size: 2rem
+			font-size: 2rem;
+			padding: 20px
 	}
 	}
 

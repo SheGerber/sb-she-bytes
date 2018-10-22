@@ -1,6 +1,9 @@
 .section {
-	margin: 50px auto;
+	margin: 20px auto;
 
+	@mixin forSml {
+		margin: 50px auto;
+	}
 
 	&--max {
 		max-width: 1200px;      /* SHE -> 1400  */
@@ -26,7 +29,7 @@
 	&__title {
 		color: $darkColor;
 		font-family: $h1Font;
-		font-size: 2rem;
+		font-size: 1.7rem;
 		font-weight: 400;
 		margin: 0 auto;
 		padding: 20px 0 0;
@@ -34,6 +37,10 @@
 
 		span {
 			color: $mainColor;
+		}
+
+		@mixin forSml {
+			font-size: 2rem;
 		}
 
 		@mixin forMed {

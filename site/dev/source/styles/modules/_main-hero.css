@@ -21,12 +21,17 @@
 		color: #fff;
 		display: inline-block;
 		font-family: 'Josefin Sans';
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		margin: 0;
-		padding: 20px;
+		padding: 13px;
+
+		@mixin forXSml {
+			font-size: 1.5rem;
+		}
 
 		@mixin forSml {
 			font-size: 2rem;
+			padding: 20px;
 		}
 	}
 }

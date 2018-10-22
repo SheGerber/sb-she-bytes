@@ -2,7 +2,7 @@
 .main-header {
 	background: #fff;
 	margin: 0 auto;
-	padding: 10px 0 10px;
+	padding-top: 10px;
 	position: relative;  
 	z-index: 9;
 
@@ -23,11 +23,15 @@
 	}
 
 	&__rtside {
+		display: none;
 		text-align: center;
 		width: 100%;
 
-		@mixin forSml {
+		@mixin forXSml {
 			display: inline-block;
+		}
+
+		@mixin forSml {
 			padding-bottom: 10px;
 			vertical-align: middle;
 			width: 49%;
@@ -35,8 +39,11 @@
 	}
 
 	&__social {
-		float: left;
-		width: 53%;
+
+		@mixin forXSml {
+			float: left;
+			width: 50%;
+		}
 
 		@mixin forSml {
 			float: none;
