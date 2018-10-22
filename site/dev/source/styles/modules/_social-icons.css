@@ -2,12 +2,19 @@
 .social-icons {
 
 	&__icon {
-		border-radius: 20px;
+		border-radius: 17px;
 		display: inline-block;
-		height: 40px;
-		margin: 0 3px 13px 3px;
+		height: 35px;
+		margin: 0;
 		position: relative;
-		width: 40px;
+		width: 35px;
+
+		@mixin forSml {
+			border-radius: 20px;
+			height: 40px;
+			margin: 0 3px 13px 3px;
+			width: 40px;
+		}
 
 		@mixin forLrg {
 			margin: 0 11px 13px 5px;

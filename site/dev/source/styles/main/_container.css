@@ -3,8 +3,13 @@
 	margin-right: auto;
 	max-width: 1200px;      /* SHE -> 1400  */
 	overflow: hidden;
-	padding-left: 27px;
-	padding-right: 27px;
+	padding-left: 13px;
+	padding-right: 13px;
+
+	@mixin forSml {
+		padding-left: 27px;
+		padding-right: 27px;
+	}
 
 	.container {
 		padding-left: 0;

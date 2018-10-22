@@ -1,13 +1,15 @@
 /***  START Main Nav  ***/
 .main-nav {
 	background: $mainColor; 
-	border-radius: 50px; 
 	color: #fff; 
 	display: block; 
 	font-family: $hdrFont;
 	padding: 21px 0;
 	width: 100%;  
 
+	@mixin forSml {
+		border-radius: 50px; 
+	}
 
 	ul {
 		margin: 0;

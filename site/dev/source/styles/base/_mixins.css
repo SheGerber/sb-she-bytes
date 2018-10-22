@@ -1,6 +1,6 @@
 
 @define-mixin forSml {
-	@media (min-width: 530px) {
+	@media (min-width: 600px) {
 		@mixin-content;
 	}
 }

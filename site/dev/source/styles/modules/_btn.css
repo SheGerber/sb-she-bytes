@@ -5,8 +5,14 @@
 	color: $lightDarkColor;
 	display: inline-block;
 	font-family: 'Josefin Sans';
-	padding: .75rem 1.2rem;
+	font-size: .85rem;
+	padding: .6rem .85rem;
 	text-decoration: none;
+
+	@mixin forSml {
+		font-size: 1rem;
+		padding: .75rem 1.2rem;
+	}
 
 	@mixin forLrg {
 		font-size: 1.25rem;
