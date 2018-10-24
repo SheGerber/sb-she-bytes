@@ -33,4 +33,15 @@
 			width: 66%;
 		}
 	}
+
+	.flexbox &--flex {
+		@mixin forMed {
+			display: flex;
+		}
+
+		& > div {
+			float: none;
+			display: flex;
+		}
+	}
 }

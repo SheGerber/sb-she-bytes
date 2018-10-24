@@ -471,6 +471,18 @@ img {
 		}
 	}
 
+@media (min-width: 900px) {
+
+.flexbox .row--flex {
+			display: flex
+	}
+	}
+
+.flexbox .row--flex > div {
+			float: none;
+			display: flex;
+		}
+
 .section {
 	margin: 20px auto;
 }
@@ -1148,6 +1160,7 @@ img {
 /***  START Box ***/
 
 .box {
+	border: 1px solid #090909;
 	box-sizing: border-box;
 	margin-bottom: 20px;
 }
@@ -1164,14 +1177,10 @@ img {
 	}
 
 .box__inside {
-		border: 1px solid #090909;
 		font-family: 'Ubuntu';
 		font-size: 1.25rem;
 		padding: 0 20px 20px;
 		text-align: center;
-
-
-
 
 	}
 
@@ -1304,6 +1313,19 @@ img {
 		}
 
 /***  END Contact Modal  ***/
+
+.show-items {
+	opacity: 0;
+	-webkit-transform: scale(.55);
+	        transform: scale(.55);
+	transition: all 1s ease-out;
+}
+
+.show-items--now {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 
 /***  START Zig Zag  ***/
 

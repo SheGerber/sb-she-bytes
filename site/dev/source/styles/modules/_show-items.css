@@ -1,0 +1,11 @@
+.show-items {
+	opacity: 0;
+	transform: scale(.55);
+	transition: all 1s ease-out;
+
+
+	&--now {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
