@@ -10,6 +10,10 @@
 		padding: 0 25px;
 	}
 
+	&--center {
+		text-align: center;
+	}
+
 	&--keyboard {
 		background: url(../images/keyboard.png);
 		background-position: center;
@@ -25,14 +29,14 @@
 			padding: 70px 0;
 		}
 	}
-
+	
 	&__title {
 		color: $darkColor;
 		font-family: $h1Font;
 		font-size: 1.7rem;
 		font-weight: 400;
 		margin: 0 auto;
-		padding: 20px 0 0;
+		padding: 40px 0 0;
 		text-align: center;
 
 		span {
@@ -48,9 +52,6 @@
 		}
 	}
 
-	&--center {
-		text-align: center;
-	}
 
 	&__contact {
 		font-family: $lowCaseFont;

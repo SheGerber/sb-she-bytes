@@ -22,6 +22,14 @@
 		@mixin forMed {
 			transform: scale(.6);
 		}
+
+		&--right {
+			display: inline-block;
+			margin-right: 20px;
+			position: relative;
+			top: 30px;
+			transform: scale(.8);
+		}
 	}
 
 	p {

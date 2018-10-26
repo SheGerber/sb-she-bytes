@@ -1,0 +1,51 @@
+.sticky-note {
+	margin-top: 50px;
+	position: relative;
+
+
+	&__msg {
+		box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+		color: #333;
+		font-family: $noteFont;
+		font-size: 27px;
+		margin: 0 auto;
+		padding: 20px;
+		position: relative;
+		transform: rotate(3deg);
+		  -moz-transform: rotate(3deg);
+		  -ms-transform: rotate(3deg);
+		  -o-transform: rotate(3deg);
+		  -webkit-transform: rotate(3deg);
+		width: 300px;
+
+
+		.author {
+			display: block;
+			margin: 30px 0 0 0;
+			text-align: right;
+		}
+	}
+}
+
+
+
+.yellow {
+	background: $ltYellowColor;
+}
+
+.blue {
+	background: $ltBlueColor;
+}
+
+.green {
+	background: $ltGreenColor;
+}
+
+.pink {
+	background: $ltPinkColor;
+}
+
+.orange {
+	background: $ltOrangeColor;
+}
+

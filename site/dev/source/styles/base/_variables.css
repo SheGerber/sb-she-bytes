@@ -8,15 +8,34 @@ $darkColor: #010101;
 $lightDarkColor: $lightColor;  
 
 
+$ltPinkColor: #fd9fc6;
+$ltBlueColor: #8fdefc;
+$ltGreenColor: #a8fda8;
+$ltOrangeColor: #f8ac68;
+$ltYellowColor: #f8f184;
+$ltPurpleColor: #e7a6ff;
+$ltAquaColor: #8bf9f3;
+
+
+
+
+
+
+
 
 $bodyFont: 'Josefin Sans';
 $hdrFont: 'Josefin Sans';
 $h1Font: 'Josefin Sans';
 $h2Font: 'Ubuntu';
 
+
+
 $lowCaseFont: 'Ubuntu';
 $upCaseFont: 'Josefin Sans';
+$scriptFont: 'Kalam', cursive;
 
+
+$noteFont: $scriptFont;
 
 
 

@@ -3,6 +3,7 @@
 	border: 1px solid #090909;
 	box-sizing: border-box;
 	margin-bottom: 20px;
+	width: 100%;
 
 	&__title {
 		background: $mainColor;
@@ -24,9 +25,12 @@
 
 		h2 {
 			font-size: 1.35rem;
-			padding: 7px 0;
+			padding: 13px 0;
 		}
 
+		p {
+			margin: -20px 0 30px;
+		}
 	}
 }
 /***  END Box  ***/

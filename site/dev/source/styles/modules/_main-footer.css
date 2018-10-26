@@ -58,6 +58,10 @@
 			@mixin forLrg {
 				font-size: 1rem;
 			}
+
+		a {
+			color: $mainColor;
+		}
 	}
 
 
